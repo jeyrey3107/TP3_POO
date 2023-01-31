@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-<p>CA MARCHE</p>
+<div th:insert="searchbar :: search"></div>
+<p th:text="'Bonjour ' + ${nomTemplate} + ' !'" />
 </body>
 </html>
